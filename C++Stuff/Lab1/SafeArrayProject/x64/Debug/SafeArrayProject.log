@@ -1,0 +1,10 @@
+﻿  SafeArrayProject.cpp
+SafeArrayProject.obj : error LNK2019: unresolved external symbol "public: __cdecl SafeArray<int>::SafeArray<int>(int)" (??0?$SafeArray@H@@QEAA@H@Z) referenced in function main
+SafeArrayProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl SafeArray<int>::insert(int)" (?insert@?$SafeArray@H@@QEAAXH@Z) referenced in function main
+SafeArrayProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl SafeArray<int>::insertAt(int,int)" (?insertAt@?$SafeArray@H@@QEAAXHH@Z) referenced in function main
+SafeArrayProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl SafeArray<int>::remove(int)" (?remove@?$SafeArray@H@@QEAAXH@Z) referenced in function main
+SafeArrayProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl SafeArray<int>::sortArray(void)" (?sortArray@?$SafeArray@H@@QEAAXXZ) referenced in function main
+SafeArrayProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl SafeArray<int>::printArray(void)" (?printArray@?$SafeArray@H@@QEAAXXZ) referenced in function main
+SafeArrayProject.obj : error LNK2019: unresolved external symbol "public: int __cdecl SafeArray<int>::getCurrentSize(void)" (?getCurrentSize@?$SafeArray@H@@QEAAHXZ) referenced in function main
+SafeArrayProject.obj : error LNK2019: unresolved external symbol "public: int __cdecl SafeArray<int>::getCapacity(void)" (?getCapacity@?$SafeArray@H@@QEAAHXZ) referenced in function main
+D:\Lab1\SafeArrayProject\x64\Debug\SafeArrayProject.exe : fatal error LNK1120: 8 unresolved externals

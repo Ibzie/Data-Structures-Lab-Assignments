@@ -1,0 +1,5 @@
+﻿  Source.cpp
+D:\Assignments\Assignment Module 1\Array.h(129,13): warning C4244: 'return': conversion from '__int64' to 'float', possible loss of data
+  The contents of <filesystem> are available only with C++17 or later.
+D:\Assignments\Assignment Module 1\Source.cpp(114,13): warning C4101: 'IncorrectQuestionNumber': unreferenced local variable
+  Assignment Module 1.vcxproj -> D:\Assignments\Assignment Module 1\x64\Debug\Assignment Module 1.exe

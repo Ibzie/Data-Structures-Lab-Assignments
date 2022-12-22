@@ -1,0 +1,6 @@
+﻿  List.cpp
+c1xx : fatal error C1083: Cannot open source file: 'C:\Users\Ibz\Downloads\List.cpp': No such file or directory
+  Node.cpp
+c1xx : fatal error C1083: Cannot open source file: 'C:\Users\Ibz\Downloads\Node.cpp': No such file or directory
+  main.cpp
+  Generating Code...

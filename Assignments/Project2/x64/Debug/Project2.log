@@ -1,0 +1,24 @@
+﻿  Array.cpp
+D:\Assignments\Project2\Array.h(131,14): warning C4244: 'return': conversion from '__int64' to 'float', possible loss of data
+  LinkedList.cpp
+D:\Assignments\Project2\Array.h(131,14): warning C4244: 'return': conversion from '__int64' to 'float', possible loss of data
+  Node.cpp
+  Queue.cpp
+  Source.cpp
+D:\Assignments\Project2\Array.h(131,14): warning C4244: 'return': conversion from '__int64' to 'float', possible loss of data
+D:\Assignments\Project2\Array.h(7,1): error C2011: 'Picture': 'class' type redefinition
+D:\Assignments\Project2\Array.h(6): message : see declaration of 'Picture'
+D:\Assignments\Project2\Source.cpp(10,12): error C2027: use of undefined type 'Picture'
+D:\Assignments\Project2\Array.h(6): message : see declaration of 'Picture'
+D:\Assignments\Project2\Source.cpp(11,1): error C2027: use of undefined type 'Picture'
+D:\Assignments\Project2\Array.h(6): message : see declaration of 'Picture'
+D:\Assignments\Project2\Source.cpp(94,10): error C2079: 'pic' uses undefined class 'Picture'
+D:\Assignments\Project2\Source.cpp(94,28): error C2440: 'initializing': cannot convert from 'initializer list' to 'int'
+D:\Assignments\Project2\Source.cpp(94,13): message : The initializer contains too many elements
+D:\Assignments\Project2\Source.cpp(237,41): error C2664: 'LinkedList RLC(int,int,Picture,LinkedList)': cannot convert argument 3 from 'int' to 'Picture'
+D:\Assignments\Project2\Source.cpp(237,41): message : use of undefined type 'Picture'
+D:\Assignments\Project2\Array.h(6,7): message : see declaration of 'Picture'
+D:\Assignments\Project2\Source.cpp(10,12): message : see declaration of 'RLC'
+  Stack.cpp
+  Generating Code...
+D:\Assignments\Project2\LinkedList.cpp(78): warning C4715: 'LinkedList::getCurrentData': not all control paths return a value

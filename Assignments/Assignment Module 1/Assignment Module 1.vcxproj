@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e65efe4c-4a0a-4a7b-bf05-43929131b0ca}</ProjectGuid>
+    <RootNamespace>AssignmentModule1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <UndefinePreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Array.cpp" />
+    <ClCompile Include="Hash.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Stack.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Array.h" />
+    <ClInclude Include="Hash.h" />
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="Stack.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Ibz\Pictures\Images\apple-18.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Apple-1.pgm" />
+    <None Include="Butterfly-1.pgm" />
+    <None Include="C:\Users\Ibz\Downloads\Butterfly-1.pgm" />
+    <None Include="C:\Users\Ibz\Downloads\butterfly-4.pgm" />
+    <None Include="C:\Users\Ibz\Downloads\cattle-9.pgm" />
+    <None Include="C:\Users\Ibz\Pictures\Images\apple-18.pgm" />
+    <None Include="C:\Users\Ibz\Pictures\Images\apple-18_1.pgm" />
+    <None Include="Image database\image016.pgm" />
+    <None Include="Image database\image017.pgm" />
+    <None Include="Image database\image018.pgm" />
+    <None Include="Image database\image019.pgm" />
+    <None Include="Image database\image020.pgm" />
+    <None Include="Image database\image021.pgm" />
+    <None Include="Image database\image022.pgm" />
+    <None Include="Image database\image023.pgm" />
+    <None Include="Image database\image024.pgm" />
+    <None Include="Image database\image025.pgm" />
+    <None Include="Image database\image026.pgm" />
+    <None Include="Image database\image027.pgm" />
+    <None Include="Image database\image028.pgm" />
+    <None Include="Image database\image029.pgm" />
+    <None Include="Image database\image030.pgm" />
+    <None Include="Image database\image031.pgm" />
+    <None Include="Image database\image032.pgm" />
+    <None Include="Image database\image033.pgm" />
+    <None Include="Image database\image034.pgm" />
+    <None Include="Image database\image035.pgm" />
+    <None Include="Image database\image036.pgm" />
+    <None Include="Image database\image037.pgm" />
+    <None Include="Image database\image038.pgm" />
+    <None Include="Image database\image039.pgm" />
+    <None Include="Image database\image040.pgm" />
+    <None Include="Image database\image041.pgm" />
+    <None Include="Image database\image042.pgm" />
+    <None Include="Image database\image043.pgm" />
+    <None Include="Image database\image044.pgm" />
+    <None Include="Image database\image045.pgm" />
+    <None Include="Image database\image046.pgm" />
+    <None Include="Image database\image047.pgm" />
+    <None Include="Image database\image048.pgm" />
+    <None Include="Image database\image049.pgm" />
+    <None Include="Image database\image050.pgm" />
+    <None Include="Image database\image051.pgm" />
+    <None Include="Image database\image052.pgm" />
+    <None Include="Image database\image053.pgm" />
+    <None Include="Image database\image054.pgm" />
+    <None Include="Image database\image055.pgm" />
+    <None Include="Image database\image056.pgm" />
+    <None Include="Image database\image057.pgm" />
+    <None Include="Image database\image058.pgm" />
+    <None Include="Image database\image059.pgm" />
+    <None Include="Image database\image060.pgm" />
+    <None Include="Image database\image061.pgm" />
+    <None Include="Image database\image062.pgm" />
+    <None Include="Image database\image063.pgm" />
+    <None Include="Image database\image064.pgm" />
+    <None Include="Image database\image065.pgm" />
+    <None Include="Image database\image066.pgm" />
+    <None Include="Image database\image067.pgm" />
+    <None Include="Image database\image068.pgm" />
+    <None Include="Image database\image069.pgm" />
+    <None Include="Image database\image070.pgm" />
+    <None Include="Image database\image071.pgm" />
+    <None Include="Image database\image072.pgm" />
+    <None Include="Image database\image073.pgm" />
+    <None Include="Image database\image074.pgm" />
+    <None Include="Image database\image075.pgm" />
+    <None Include="Image database\image076.pgm" />
+    <None Include="Image database\image077.pgm" />
+    <None Include="Image database\image078.pgm" />
+    <None Include="Image database\image079.pgm" />
+    <None Include="Image database\image080.pgm" />
+    <None Include="Image database\image081.pgm" />
+    <None Include="Image database\image082.pgm" />
+    <None Include="Image database\image083.pgm" />
+    <None Include="Image database\image084.pgm" />
+    <None Include="Image database\image085.pgm" />
+    <None Include="Image database\image086.pgm" />
+    <None Include="Image database\image087.pgm" />
+    <None Include="Image database\image088.pgm" />
+    <None Include="Image database\image089.pgm" />
+    <None Include="Image database\image090.pgm" />
+    <None Include="Image database\image091.pgm" />
+    <None Include="Image database\image092.pgm" />
+    <None Include="Image database\image093.pgm" />
+    <None Include="Image database\image094.pgm" />
+    <None Include="Image database\image095.pgm" />
+    <None Include="Image database\image096.pgm" />
+    <None Include="Image database\image097.pgm" />
+    <None Include="Image database\image098.pgm" />
+    <None Include="Image database\image099.pgm" />
+    <None Include="Image database\image100.pgm" />
+    <None Include="Image database\image101.pgm" />
+    <None Include="Image database\image102.pgm" />
+    <None Include="Image database\image103.pgm" />
+    <None Include="Image database\image104.pgm" />
+    <None Include="Image database\image105.pgm" />
+    <None Include="Image database\image106.pgm" />
+    <None Include="Image database\image107.pgm" />
+    <None Include="Image database\image108.pgm" />
+    <None Include="Image database\image109.pgm" />
+    <None Include="Image database\image110.pgm" />
+    <None Include="Image database\image111.pgm" />
+    <None Include="Image database\image112.pgm" />
+    <None Include="Image database\image113.pgm" />
+    <None Include="Image database\image114.pgm" />
+    <None Include="Image database\image115.pgm" />
+    <None Include="Image database\image116.pgm" />
+    <None Include="Image database\image117.pgm" />
+    <None Include="Image database\image118.pgm" />
+    <None Include="Image database\image119.pgm" />
+    <None Include="Image database\image120.pgm" />
+    <None Include="Image database\image121.pgm" />
+    <None Include="Image database\image122.pgm" />
+    <None Include="Image database\image123.pgm" />
+    <None Include="Image database\image124.pgm" />
+    <None Include="Image database\image125.pgm" />
+    <None Include="Image database\image126.pgm" />
+    <None Include="Image database\image127.pgm" />
+    <None Include="Image database\image128.pgm" />
+    <None Include="Image database\image129.pgm" />
+    <None Include="Image database\image130.pgm" />
+    <None Include="Image database\image131.pgm" />
+    <None Include="Image database\image132.pgm" />
+    <None Include="Image database\image133.pgm" />
+    <None Include="Image database\image134.pgm" />
+    <None Include="Image database\image135.pgm" />
+    <None Include="Image database\image136.pgm" />
+    <None Include="Image database\image137.pgm" />
+    <None Include="Image database\image138.pgm" />
+    <None Include="Image database\image139.pgm" />
+    <None Include="Image database\image140.pgm" />
+    <None Include="Image database\image141.pgm" />
+    <None Include="Image database\image142.pgm" />
+    <None Include="Image database\image143.pgm" />
+    <None Include="Image database\image144.pgm" />
+    <None Include="Image database\image145.pgm" />
+    <None Include="Image database\image146.pgm" />
+    <None Include="Image database\image147.pgm" />
+    <None Include="Image database\image148.pgm" />
+    <None Include="Image database\image149.pgm" />
+    <None Include="Image database\image150.pgm" />
+    <None Include="Image database\image151.pgm" />
+    <None Include="Image database\image152.pgm" />
+    <None Include="Image database\image153.pgm" />
+    <None Include="Image database\image154.pgm" />
+    <None Include="Image database\image155.pgm" />
+    <None Include="Image database\image156.pgm" />
+    <None Include="Image database\image157.pgm" />
+    <None Include="Image database\image158.pgm" />
+    <None Include="Image database\image159.pgm" />
+    <None Include="Image database\image160.pgm" />
+    <None Include="Image database\image161.pgm" />
+    <None Include="Image database\image162.pgm" />
+    <None Include="Image database\image163.pgm" />
+    <None Include="Image database\image164.pgm" />
+    <None Include="Image database\image165.pgm" />
+    <None Include="Image database\image166.pgm" />
+    <None Include="Image database\image167.pgm" />
+    <None Include="Image database\image168.pgm" />
+    <None Include="Image database\image169.pgm" />
+    <None Include="Image database\image170.pgm" />
+    <None Include="Image database\image171.pgm" />
+    <None Include="Image database\image172.pgm" />
+    <None Include="Image database\image173.pgm" />
+    <None Include="Image database\image174.pgm" />
+    <None Include="Image database\image175.pgm" />
+    <None Include="Image database\image176.pgm" />
+    <None Include="Image database\image177.pgm" />
+    <None Include="Image database\image178.pgm" />
+    <None Include="Image database\image179.pgm" />
+    <None Include="Image database\image180.pgm" />
+    <None Include="Image database\image181.pgm" />
+    <None Include="Image database\image182.pgm" />
+    <None Include="Image database\image183.pgm" />
+    <None Include="Image database\image184.pgm" />
+    <None Include="Image database\image185.pgm" />
+    <None Include="Image database\image186.pgm" />
+    <None Include="Image database\image187.pgm" />
+    <None Include="Image database\image188.pgm" />
+    <None Include="Image database\image189.pgm" />
+    <None Include="Image database\image190.pgm" />
+    <None Include="Image database\image191.pgm" />
+    <None Include="Image database\image192.pgm" />
+    <None Include="Image database\image193.pgm" />
+    <None Include="Image database\image194.pgm" />
+    <None Include="Image database\image195.pgm" />
+    <None Include="Image database\image196.pgm" />
+    <None Include="Image database\image197.pgm" />
+    <None Include="Image database\image198.pgm" />
+    <None Include="Image database\image199.pgm" />
+    <None Include="Image database\image200.pgm" />
+    <None Include="Image database\image201.pgm" />
+    <None Include="Image database\image202.pgm" />
+    <None Include="Image database\image203.pgm" />
+    <None Include="Image database\image204.pgm" />
+    <None Include="Image database\image205.pgm" />
+    <None Include="Image database\image206.pgm" />
+    <None Include="Image database\image207.pgm" />
+    <None Include="Image database\image208.pgm" />
+    <None Include="Image database\image209.pgm" />
+    <None Include="Image database\image210.pgm" />
+    <None Include="Image database\image211.pgm" />
+    <None Include="Image database\image212.pgm" />
+    <None Include="Image database\image213.pgm" />
+    <None Include="Image database\image214.pgm" />
+    <None Include="Image database\image215.pgm" />
+    <None Include="Image database\image216.pgm" />
+    <None Include="Image database\image217.pgm" />
+    <None Include="Image database\image218.pgm" />
+    <None Include="Image database\image219.pgm" />
+    <None Include="Image database\image220.pgm" />
+    <None Include="Image database\image221.pgm" />
+    <None Include="Image database\image222.pgm" />
+    <None Include="Image database\image223.pgm" />
+    <None Include="Image database\image224.pgm" />
+    <None Include="Image database\image225.pgm" />
+    <None Include="Image database\image226.pgm" />
+    <None Include="Image database\image227.pgm" />
+    <None Include="Image database\image228.pgm" />
+    <None Include="Image database\image229.pgm" />
+    <None Include="Image database\image230.pgm" />
+    <None Include="Image database\image231.pgm" />
+    <None Include="Image database\image232.pgm" />
+    <None Include="Image database\image233.pgm" />
+    <None Include="Image database\image234.pgm" />
+    <None Include="Image database\image235.pgm" />
+    <None Include="Image database\image236.pgm" />
+    <None Include="Image database\image237.pgm" />
+    <None Include="Image database\image238.pgm" />
+    <None Include="Image database\image239.pgm" />
+    <None Include="Image database\image240.pgm" />
+    <None Include="Image database\image241.pgm" />
+    <None Include="Image database\image242.pgm" />
+    <None Include="Image database\image243.pgm" />
+    <None Include="Image database\image244.pgm" />
+    <None Include="Image database\image245.pgm" />
+    <None Include="Image database\image246.pgm" />
+    <None Include="Image database\image247.pgm" />
+    <None Include="Image database\image248.pgm" />
+    <None Include="Image database\image249.pgm" />
+    <None Include="Image database\image250.pgm" />
+    <None Include="Image database\image251.pgm" />
+    <None Include="Image database\image252.pgm" />
+    <None Include="Image database\image253.pgm" />
+    <None Include="Image database\image254.pgm" />
+    <None Include="Image database\image255.pgm" />
+    <None Include="Image database\image256.pgm" />
+    <None Include="Image database\image257.pgm" />
+    <None Include="Image database\image258.pgm" />
+    <None Include="Image database\image259.pgm" />
+    <None Include="Image database\image260.pgm" />
+    <None Include="Image database\image261.pgm" />
+    <None Include="Image database\image262.pgm" />
+    <None Include="Image database\image263.pgm" />
+    <None Include="Image database\image264.pgm" />
+    <None Include="Image database\image265.pgm" />
+    <None Include="Image database\image266.pgm" />
+    <None Include="Image database\image267.pgm" />
+    <None Include="Image database\image268.pgm" />
+    <None Include="Image database\image269.pgm" />
+    <None Include="Image database\image270.pgm" />
+    <None Include="Image database\image271.pgm" />
+    <None Include="Image database\image272.pgm" />
+    <None Include="Image database\image273.pgm" />
+    <None Include="Image database\image274.pgm" />
+    <None Include="Image database\image275.pgm" />
+    <None Include="Image database\image276.pgm" />
+    <None Include="Image database\image277.pgm" />
+    <None Include="Image database\image278.pgm" />
+    <None Include="Image database\image279.pgm" />
+    <None Include="Image database\image280.pgm" />
+    <None Include="Image database\image281.pgm" />
+    <None Include="Image database\image282.pgm" />
+    <None Include="Image database\image283.pgm" />
+    <None Include="Image database\image284.pgm" />
+    <None Include="Image database\image285.pgm" />
+    <None Include="Image database\image286.pgm" />
+    <None Include="Image database\image287.pgm" />
+    <None Include="Image database\image288.pgm" />
+    <None Include="Image database\image289.pgm" />
+    <None Include="Image database\image290.pgm" />
+    <None Include="Image database\image291.pgm" />
+    <None Include="Image database\image292.pgm" />
+    <None Include="Image database\image293.pgm" />
+    <None Include="Image database\image294.pgm" />
+    <None Include="Image database\image295.pgm" />
+    <None Include="Image database\image296.pgm" />
+    <None Include="Image database\image297.pgm" />
+    <None Include="Image database\image298.pgm" />
+    <None Include="Image database\image299.pgm" />
+    <None Include="Image database\image300.pgm" />
+    <None Include="Image database\image301.pgm" />
+    <None Include="Image database\image302.pgm" />
+    <None Include="Image database\image303.pgm" />
+    <None Include="Image database\image304.pgm" />
+    <None Include="Image database\image305.pgm" />
+    <None Include="Image database\image306.pgm" />
+    <None Include="Image database\image307.pgm" />
+    <None Include="Image database\image308.pgm" />
+    <None Include="Image database\image309.pgm" />
+    <None Include="Image database\image310.pgm" />
+    <None Include="Image database\image311.pgm" />
+    <None Include="Image database\image312.pgm" />
+    <None Include="Image database\image313.pgm" />
+    <None Include="Image database\image314.pgm" />
+    <None Include="Image database\image315.pgm" />
+    <None Include="Image database\image316.pgm" />
+    <None Include="Image database\image317.pgm" />
+    <None Include="Image database\image318.pgm" />
+    <None Include="Image database\image319.pgm" />
+    <None Include="Image database\image320.pgm" />
+    <None Include="Image database\image321.pgm" />
+    <None Include="Image database\image322.pgm" />
+    <None Include="Image database\image323.pgm" />
+    <None Include="Image database\image324.pgm" />
+    <None Include="Image database\image325.pgm" />
+    <None Include="Image database\image326.pgm" />
+    <None Include="Image database\image327.pgm" />
+    <None Include="Image database\image328.pgm" />
+    <None Include="Image database\image329.pgm" />
+    <None Include="Image database\image330.pgm" />
+    <None Include="Image database\image331.pgm" />
+    <None Include="Image database\image332.pgm" />
+    <None Include="Image database\image333.pgm" />
+    <None Include="Image database\image334.pgm" />
+    <None Include="Image database\image335.pgm" />
+    <None Include="Image database\image336.pgm" />
+    <None Include="Image database\image337.pgm" />
+    <None Include="Image database\image338.pgm" />
+    <None Include="Image database\image339.pgm" />
+    <None Include="Image database\image340.pgm" />
+    <None Include="Image database\image341.pgm" />
+    <None Include="Image database\image342.pgm" />
+    <None Include="Image database\image343.pgm" />
+    <None Include="Image database\image344.pgm" />
+    <None Include="Image database\image345.pgm" />
+    <None Include="Image database\image346.pgm" />
+    <None Include="Image database\image347.pgm" />
+    <None Include="Image database\image348.pgm" />
+    <None Include="Image database\image349.pgm" />
+    <None Include="Image database\image350.pgm" />
+    <None Include="Image database\image351.pgm" />
+    <None Include="Image database\image352.pgm" />
+    <None Include="Image database\image353.pgm" />
+    <None Include="Image database\image354.pgm" />
+    <None Include="Image database\image355.pgm" />
+    <None Include="Image database\image356.pgm" />
+    <None Include="Image database\image357.pgm" />
+    <None Include="Image database\image358.pgm" />
+    <None Include="Image database\image359.pgm" />
+    <None Include="Image database\image360.pgm" />
+    <None Include="Image database\image361.pgm" />
+    <None Include="Image database\image362.pgm" />
+    <None Include="Image database\image363.pgm" />
+    <None Include="Image database\image364.pgm" />
+    <None Include="Image database\image365.pgm" />
+    <None Include="Image database\image366.pgm" />
+    <None Include="Image database\image367.pgm" />
+    <None Include="Image database\image368.pgm" />
+    <None Include="Image database\image369.pgm" />
+    <None Include="Image database\image370.pgm" />
+    <None Include="Image database\image371.pgm" />
+    <None Include="Image database\image372.pgm" />
+    <None Include="Image database\image373.pgm" />
+    <None Include="Image database\image374.pgm" />
+    <None Include="Image database\image375.pgm" />
+    <None Include="Image database\image376.pgm" />
+    <None Include="Image database\image377.pgm" />
+    <None Include="Image database\image378.pgm" />
+    <None Include="Image database\image379.pgm" />
+    <None Include="Image database\image380.pgm" />
+    <None Include="Image database\image381.pgm" />
+    <None Include="Image database\image382.pgm" />
+    <None Include="Image database\image383.pgm" />
+    <None Include="Image database\image384.pgm" />
+    <None Include="Image database\image385.pgm" />
+    <None Include="Image database\image386.pgm" />
+    <None Include="Image database\image387.pgm" />
+    <None Include="Image database\image388.pgm" />
+    <None Include="Image database\image389.pgm" />
+    <None Include="Image database\image390.pgm" />
+    <None Include="Image database\image391.pgm" />
+    <None Include="Image database\image392.pgm" />
+    <None Include="Image database\image393.pgm" />
+    <None Include="Image database\image394.pgm" />
+    <None Include="Image database\image395.pgm" />
+    <None Include="Image database\image396.pgm" />
+    <None Include="Image database\image397.pgm" />
+    <None Include="Image database\image398.pgm" />
+    <None Include="Image database\image399.pgm" />
+    <None Include="Image database\image400.pgm" />
+    <None Include="Image database\image401.pgm" />
+    <None Include="Image database\image402.pgm" />
+    <None Include="Image database\image403.pgm" />
+    <None Include="Image database\image404.pgm" />
+    <None Include="Image database\image405.pgm" />
+    <None Include="Image database\image406.pgm" />
+    <None Include="Image database\image407.pgm" />
+    <None Include="Image database\image408.pgm" />
+    <None Include="Image database\image409.pgm" />
+    <None Include="Image database\image410.pgm" />
+    <None Include="Image database\image411.pgm" />
+    <None Include="Image database\image412.pgm" />
+    <None Include="Image database\image413.pgm" />
+    <None Include="Image database\image414.pgm" />
+    <None Include="Image database\image415.pgm" />
+    <None Include="Image database\image416.pgm" />
+    <None Include="Image database\image417.pgm" />
+    <None Include="Image database\image418.pgm" />
+    <None Include="Image database\image419.pgm" />
+    <None Include="Image database\image420.pgm" />
+    <None Include="Image database\image421.pgm" />
+    <None Include="Image database\image422.pgm" />
+    <None Include="Image database\image423.pgm" />
+    <None Include="Image database\image424.pgm" />
+    <None Include="Image database\image425.pgm" />
+    <None Include="Image database\image426.pgm" />
+    <None Include="Image database\image427.pgm" />
+    <None Include="Image database\image428.pgm" />
+    <None Include="Image database\image429.pgm" />
+    <None Include="Image database\image430.pgm" />
+    <None Include="Image database\image431.pgm" />
+    <None Include="Image database\image432.pgm" />
+    <None Include="Image database\image433.pgm" />
+    <None Include="Image database\image434.pgm" />
+    <None Include="Image database\image435.pgm" />
+    <None Include="Image database\image436.pgm" />
+    <None Include="Image database\image437.pgm" />
+    <None Include="Image database\image438.pgm" />
+    <None Include="Image database\image439.pgm" />
+    <None Include="Image database\image440.pgm" />
+    <None Include="Image database\image441.pgm" />
+    <None Include="Image database\image442.pgm" />
+    <None Include="Image database\image443.pgm" />
+    <None Include="Image database\image444.pgm" />
+    <None Include="Image database\image445.pgm" />
+    <None Include="Image database\image446.pgm" />
+    <None Include="Image database\image447.pgm" />
+    <None Include="Image database\image448.pgm" />
+    <None Include="Image database\image449.pgm" />
+    <None Include="Image database\image450.pgm" />
+    <None Include="Image database\image451.pgm" />
+    <None Include="Image database\image452.pgm" />
+    <None Include="Image database\image453.pgm" />
+    <None Include="Image database\image454.pgm" />
+    <None Include="Image database\image455.pgm" />
+    <None Include="Image database\image456.pgm" />
+    <None Include="Image database\image457.pgm" />
+    <None Include="Image database\image458.pgm" />
+    <None Include="Image database\image459.pgm" />
+    <None Include="Image database\image460.pgm" />
+    <None Include="Image database\image461.pgm" />
+    <None Include="Image database\image462.pgm" />
+    <None Include="Image database\image463.pgm" />
+    <None Include="Image database\image464.pgm" />
+    <None Include="Image database\image465.pgm" />
+    <None Include="Image database\image466.pgm" />
+    <None Include="Image database\image467.pgm" />
+    <None Include="Image database\image468.pgm" />
+    <None Include="Image database\image469.pgm" />
+    <None Include="Image database\image470.pgm" />
+    <None Include="Image database\image471.pgm" />
+    <None Include="Image database\image472.pgm" />
+    <None Include="Image database\image473.pgm" />
+    <None Include="Image database\image474.pgm" />
+    <None Include="Image database\image475.pgm" />
+    <None Include="Image database\image476.pgm" />
+    <None Include="Image database\image477.pgm" />
+    <None Include="Image database\image478.pgm" />
+    <None Include="Image database\image479.pgm" />
+    <None Include="Image database\image480.pgm" />
+    <None Include="Image database\image481.pgm" />
+    <None Include="Image database\image482.pgm" />
+    <None Include="Image database\image483.pgm" />
+    <None Include="Image database\image484.pgm" />
+    <None Include="Image database\image485.pgm" />
+    <None Include="Image database\image486.pgm" />
+    <None Include="Image database\image487.pgm" />
+    <None Include="Image database\image488.pgm" />
+    <None Include="Image database\image489.pgm" />
+    <None Include="Image database\image490.pgm" />
+    <None Include="Image database\image491.pgm" />
+    <None Include="Image database\image492.pgm" />
+    <None Include="Image database\image493.pgm" />
+    <None Include="Image database\image494.pgm" />
+    <None Include="Image database\image495.pgm" />
+    <None Include="Image database\image496.pgm" />
+    <None Include="Image database\image497.pgm" />
+    <None Include="Image database\image498.pgm" />
+    <None Include="Image database\image499.pgm" />
+    <None Include="Image database\image500.pgm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

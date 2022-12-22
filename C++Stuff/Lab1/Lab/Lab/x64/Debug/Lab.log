@@ -1,0 +1,4 @@
+﻿  Task3.cpp
+D:\Lab1\Lab\Lab\Task3.cpp(22,32): error C3878: syntax error: unexpected token '<<' following 'expression_statement'
+D:\Lab1\Lab\Lab\Task3.cpp(22,32): message : error recovery skipped: '<<'
+D:\Lab1\Lab\Lab\Task3.cpp(39,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data

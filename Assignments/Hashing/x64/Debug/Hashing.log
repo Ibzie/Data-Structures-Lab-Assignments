@@ -1,0 +1,4 @@
+﻿  Source.cpp
+D:\Assignments\Hashing\Source.cpp(18,12): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\Assignments\Hashing\Source.cpp(20,6): warning C4834: discarding return value of function with 'nodiscard' attribute
+  Hashing.vcxproj -> D:\Assignments\Hashing\x64\Debug\Hashing.exe

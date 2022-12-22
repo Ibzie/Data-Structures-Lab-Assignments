@@ -1,0 +1,3 @@
+﻿  Queue.cpp
+D:\Lab Work\QueueLab\Queue.cpp(26): warning C4715: 'Queue::deQ': not all control paths return a value
+  QueueLab.vcxproj -> D:\Lab Work\QueueLab\x64\Debug\QueueLab.exe
